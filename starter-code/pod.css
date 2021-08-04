@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --medium-aquamarine: #54E6AF;
+    --space-cadet: #2c334b;
+    --rich-black-fogra: rgb(18, 23, 27);
+    --white: #FFFFFF;
+    --dark-blue-gray: rgb(90, 102, 138);
+    --placeholder: #c2cbe5;
+    /* font family */
+    --chivo-light: 'Chivo', sans-serif;
+}
+
+body {
+    background-color: var(--rich-black-fogra);
+}
+.pod_logo {
+    margin: 4rem 0 0 5rem;
+}
+
+h1 {
+    color: var(--medium-aquamarine);
+    font-family: var(--chivo-light);
+    text-transform: uppercase;
+    padding: 30px 40px;
+    font-size: 40px;
+}
+
+p {
+    font-family: var(--chivo-light);
+    color: var(--dark-blue-gray);
+    padding: 10px 40px;
+    line-height: 1.5em;
+}
+
+span {
+    color: var(--white);
+    font-family: var(--chivo-light);
+    text-transform: uppercase;
+}
+
+
+.error {
+    font-family: var(--chivo-light);
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.error-message {
+    margin-top: 0.5rem;
+}
+
+.pod-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pod-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: center;
+}
+
+/* pod box styling starts */
+
+.public_box {
+    position: absolute;
+    background-color: var(--rich-black-fogra);
+    width: 700px;
+    height: 520px;
+    margin-top: 6.4rem;
+    margin-left: 1rem;
+}
+
+input {
+    background-color: var(--space-cadet);
+    border-radius: 50px;
+    color: var(--white);
+    border: none;
+    padding: 19px;
+    margin: 2rem 0 0 -1.5rem;
+    width: 380px;
+}
+
+input::placeholder {
+    color: var(--placeholder);
+    font-weight: 400;
+    font-family: var(--chivo-light);
+}
+
+.btn-request {
+    background-color: var(--medium-aquamarine);
+    border: none;
+    border-radius: 50px;
+    color: var(--rich-black-fogra);
+    cursor: pointer;
+    font-family: var(--chivo-light);
+    font-weight: 400;
+    padding: 16px;
+    margin-right: 12.7rem;
+    margin-left: -8.6rem;
+}
+
+.btn-request:hover {
+    background-color:#81e4be;
+}
+
+
+.host {
+    margin: -1rem 0 0 24rem;
+}
+
+
+/* pod logos section */
+.pod-images {
+    margin: 5rem 0 0 0.5rem;
+}
+
+.pod-images img {
+    margin-left: 2rem;
+}
+
+.pattern_dots {
+    position: absolute;
+    margin: 34.5rem 12rem 0 -12.8rem;
+}
+
+/***************** Tablet ***********************/
+@media (max-width: 900px) {
+    .host {
+        margin: -7.5rem 0 0 23rem;
+        width: 60%;
+    }
+
+    .public_box {
+        position: absolute;
+        width: 760px;
+        height: 520px;
+        margin-top: 10rem;
+        margin-left: 2rem;
+    }
+
+   .pattern_dots {
+    position: absolute;
+    margin: 3rem 12rem 0 2.8rem;
+    }
+}
+
+/****************** Mobile ***********************/
+@media (max-width: 575px) {
+    .pod_logo {
+        height: 60%;
+        width: 30%;
+        z-index: 2;
+        margin: 4rem 0 0 10rem;
+    }
+
+    body {
+        background-image: url("/starter-code/assets/mobile/image-host.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .public_box {
+        background-color: rgb(22, 28, 32);
+        border: none;
+        opacity: 0.9;
+        width: 500px;
+        height: 697px;
+        margin: 9rem 2rem -19rem 0;
+    }
+
+    .btn-request {
+        background-color: var(--medium-aquamarine);
+        margin: 2rem 0 0 1rem;
+        width: 87%;
+    }
+
+    h1 {
+        margin: 9rem 0 0 0
+    }
+
+    p {
+        margin-left: 1.5rem;
+    }
+
+    .public_box h1 {
+        text-align: center;
+    }
+
+     .pattern_dots {
+        display: none;
+    }
+
+    input {
+        margin-top: 6rem;
+        margin-left: 1rem;
+    } 
+
+    .pod-images {
+        margin-top: -13.5rem;
+        margin-left: -2rem;
+    }
+
+    .pod-images img{
+    margin-left: 3rem;
+    margin-right: -2.4rem;
+    }
+
+    .host {
+        display: none;
+    }
+
+    .error-message {
+        margin: -4.5rem 0 0 3rem;
+    }
+}
