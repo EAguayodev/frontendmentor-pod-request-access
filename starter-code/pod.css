@@ -17,8 +17,13 @@
     --chivo-light: 'Chivo', sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: var(--rich-black-fogra);
+    min-height: 100vh;
 }
 .pod_logo {
     margin: 4rem 0 0 5rem;
