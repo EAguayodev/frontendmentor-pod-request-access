@@ -1,8 +1,7 @@
 # Frontend Mentor - Pod request access landing page
 
-![Design preview for the Pod request access landing page coding challenge](./preview.jpg)
 
-## Welcome! 👋
+## Hi I'm Eric Aguayo! 👋
 
 Thanks for purchasing this premium Frontend Mentor coding challenge.
 
