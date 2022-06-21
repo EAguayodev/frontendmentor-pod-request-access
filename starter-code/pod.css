@@ -133,7 +133,7 @@ input::placeholder {
 }
 
 .pattern_dots {
-    position: absolute;
+    position: static;
     margin: 34.5rem 12rem 0 -12.8rem;
 }
 
