@@ -13,6 +13,7 @@
     --placeholder: #c2cbe5;
     /* font family */
     --chivo-light: 'Chivo', sans-serif;
+    --mirage: #121725;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-    background-color: var(--rich-black-fogra);
+    background-color: var(--mirage);
     min-height: 100vh;
 }
 .pod_logo {
@@ -33,6 +34,7 @@ h1 {
     text-transform: uppercase;
     padding: 30px 40px;
     font-size: 40px;
+    font-weight: 300;
 }
 
 p {
@@ -40,6 +42,7 @@ p {
     color: var(--dark-blue-gray);
     padding: 10px 40px;
     line-height: 1.5em;
+    margin-top: -2rem;
 }
 
 span {
