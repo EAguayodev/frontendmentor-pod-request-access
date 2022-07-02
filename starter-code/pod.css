@@ -194,7 +194,8 @@ input::placeholder {
     .btn-request {
         background-color: var(--medium-aquamarine);
         margin: 2rem 0 0 1rem;
-        width: 87%;
+        width: 326px;
+        height: 46px;
     }
 
     h1 {
@@ -203,6 +204,11 @@ input::placeholder {
 
     p {
         margin-left: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
     }
 
     .public_box h1 {
@@ -216,16 +222,20 @@ input::placeholder {
     input {
         margin-top: 6rem;
         margin-left: 1rem;
+        width: 327px;
+        height: 46px;
     } 
 
     .pod-images {
-        margin-top: -13.5rem;
-        margin-left: -2rem;
+        margin-top: -10.5rem;
+        margin-left: 4rem;
+        width: 315px;
+        height: 17px;
     }
 
     .pod-images img{
-    margin-left: 3rem;
-    margin-right: -2.4rem;
+        margin-left: 3rem;
+        margin-right: -2.4rem;
     }
 
     .host {
