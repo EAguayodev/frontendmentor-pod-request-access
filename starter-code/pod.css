@@ -193,7 +193,7 @@ input::placeholder {
 
     .btn-request {
         background-color: var(--medium-aquamarine);
-        margin: 2rem 0 0 1rem;
+        margin: 2rem 0 0 -3rem;
         width: 326px;
         height: 46px;
     }
@@ -202,16 +202,18 @@ input::placeholder {
         margin: 9rem 0 0 0
     }
 
-    p {
-        margin-left: 1.5rem;
+    .public_box h1 {
+        text-align: center;
+        font-size: 27px;
+        line-height: 38px;
+    }
+    
+    .publi_box p {
+        margin: 0 4rem 0 -5rem;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
         line-height: 25px;
-        text-align: center;
-    }
-
-    .public_box h1 {
         text-align: center;
     }
 
@@ -221,7 +223,7 @@ input::placeholder {
 
     input {
         margin-top: 6rem;
-        margin-left: 1rem;
+        margin-left: -3rem;
         width: 327px;
         height: 46px;
     } 
