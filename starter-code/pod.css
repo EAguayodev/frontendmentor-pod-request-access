@@ -137,7 +137,7 @@ input::placeholder {
 }
 
 /***************** Tablet ***********************/
-@media (max-width: 1023px) {
+@media (max-width: 900px) {
     .host {
         margin: -7.5rem 0 0 23rem;
         width: 60%;
