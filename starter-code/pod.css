@@ -17,10 +17,6 @@
     --mirage: #121725;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background-color: var(--mirage);
     min-height: 100vh;
