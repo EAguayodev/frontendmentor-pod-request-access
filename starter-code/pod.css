@@ -132,7 +132,7 @@ input::placeholder {
 }
 
 .pattern_dots {
-    
+    display: none;
     margin: -2rem 0rem 0 64.8rem;
 }
 
