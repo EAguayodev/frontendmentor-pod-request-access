@@ -133,8 +133,7 @@ input::placeholder {
 
 .pattern_dots {
     position: absolute;
-    margin: -2rem 0rem 0 40rem;
-    z-index: 1;
+    margin: -2rem 0rem 0 64.8rem;
 }
 
 /***************** Tablet ***********************/
