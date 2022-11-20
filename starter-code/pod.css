@@ -161,6 +161,10 @@ input::placeholder {
 
 /****************** Mobile ***********************/
 @media (max-width: 767px) {
+    html{
+    overflow-x: hidden:
+    }
+    
     .pod_logo {
         height: 60%;
         width: 30%;
