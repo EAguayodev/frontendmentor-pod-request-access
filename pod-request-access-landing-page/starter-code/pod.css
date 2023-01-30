@@ -183,7 +183,7 @@ input::placeholder {
     .pod_logo {
         height: 60%;
         width: 30%;
-        z-index: 2;
+        z-index: 10;
         margin: 4rem 0 0 10rem;
     }
 
