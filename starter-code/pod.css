@@ -18,11 +18,16 @@
 }
 
 body {
+    position: relative;
     background-color: var(--rich-black-fogra);
 }
 
 .pod_logo {
-    margin: 4rem 0 0 5rem;
+    position: relative;
+    top: 4rem;
+    left: 5rem;
+    width: 134.85px;
+    height: 56px;
 }
 
 h1 {
@@ -35,6 +40,8 @@ h1 {
     font-size: 52px;
     font-weight: 400;
     line-height: 62px;
+    width: 665px;
+        height: 124px;
 }
 
 .public_box p {
@@ -121,10 +128,12 @@ input::placeholder {
     font-size: 14px;
     font-family: var(--chivo-light);
     font-weight: 400;
-    padding: 16px;
+    /* padding: 16px; */
     position: relative;
     top: 5.5rem;
-    left: -11rem;
+    left: -12.6rem;
+    width: 162px;
+    height: 46px;
 }
 
 .btn-request:hover {
@@ -155,7 +164,7 @@ input::placeholder {
 
 .pattern_dots {
     position: relative;
-    top: 34rem;
+    top: 38rem;
     left: 65rem;
 }
 
@@ -180,6 +189,15 @@ input::placeholder {
         margin-left: 2rem;
     }
 
+    .public_box h1{
+        position: relative;
+        font-size: 48px;
+        line-height: 56px;
+        width: 635px;
+        height: 112px;
+        font-weight: 300;
+    }
+
     .public_box p {
         font-size: 18px;
         font-weight: 400;
@@ -187,7 +205,9 @@ input::placeholder {
 
     .pattern_dots {
         position: relative;
-        margin: -23rem 0 0 2.8rem;
+        top: 0;
+        left: 0;
+        /* margin: -23rem 0 0 2.8rem; */
     }
 }
 
@@ -198,10 +218,12 @@ input::placeholder {
     }
 
     .pod_logo {
-        height: 60%;
-        width: 30%;
+        position:relative;
+        width: 134.85px;
+        height: 56px;
         z-index: 2;
-        margin: 4rem 0 0 10rem;
+        left: 50px;
+        top: 12px;
     }
 
     body {
@@ -227,10 +249,10 @@ input::placeholder {
     }
 
     .btn-request {
-    background-color: var(--medium-aquamarine);
-        margin: 2rem 0 0 1rem;
+        background-color: var(--medium-aquamarine);
         font-size: 14px;
-        width: 87%;
+       width: 326px;
+        height: 46px;
         font-weight: 400;
         position: relative;
         top: 15rem;
@@ -247,16 +269,21 @@ input::placeholder {
         line-height: 38px;
         text-align: center;
         text-transform: uppercase;
+        width: 327px;
+            height: 76px;
     }
 
     .public_box p {
         position: relative;
         left: 1.5rem;
+        margin-right: -23px;
         top: 9.5rem;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
         text-align: center;
+        width: 327px;
+        height: 100px;
     }
 
     .pattern_dots {
@@ -267,6 +294,8 @@ input::placeholder {
         top: 16rem;
         left: 3rem;
         position: relative;
+        width: 327px;
+        height: 46px;
     }
 
     .pod-images {
@@ -282,6 +311,11 @@ input::placeholder {
 
     .host {
         display: none;
+    }
+
+    form{
+        width: 327px;
+            height: 108px;
     }
 
     .error-message {
