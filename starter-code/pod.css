@@ -2,43 +2,51 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --medium-aquamarine: #54E6AF;
     --space-cadet: #2c334b;
-    --rich-black-fogra: rgb(18, 23, 27);
+    --rich-black-fogra: #121725;
     --white: #FFFFFF;
-    --dark-blue-gray: rgb(90, 102, 138);
+    --dark-blue-gray: #5a668a;
     --placeholder: #c2cbe5;
     /* font family */
-    --chivo-light: 'Chivo', sans-serif;
-    --mirage: #121725;
+    --chivo-light: 'Chivo';
 }
 
 body {
-    background-color: var(--mirage);
-    min-height: 100vh;
+    background-color: var(--rich-black-fogra);
 }
+
 .pod_logo {
     margin: 4rem 0 0 5rem;
 }
 
 h1 {
     color: var(--medium-aquamarine);
-    font-family: var(--chivo-light);
+    font-family: 'Chivo';
     text-transform: uppercase;
-    padding: 30px 40px;
-    font-size: 40px;
-    font-weight: 300;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
 }
 
-p {
-    font-family: var(--chivo-light);
-    color: var(--dark-blue-gray);
-    padding: 10px 40px;
-    line-height: 1.5em;
-    margin-top: -2rem;
+.public_box p {
+    font-family: 'Chivo';
+    color: #C2CBE5;
+    position: relative;
+    top: 5rem;
+    left: 2.2rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 span {
@@ -55,12 +63,13 @@ span {
 }
 
 .error-message {
+    position: relative;
+    top: 6rem;
+    right: 1rem;
     margin-top: 0.5rem;
 }
 
 .pod-container {
-    max-width: 1240px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,18 +80,17 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
 }
 
 /* pod box styling starts */
 
 .public_box {
     position: absolute;
-    background-color: var(--mirage);
-    width: 700px;
-    height: 520px;
-    margin-top: 6.4rem;
-    margin-left: 1rem;
+    background-color: var(--rich-black-fogra);
+    width: 723px;
+    height: 509px;
+    top: 13.2rem;
 }
 
 input {
@@ -91,7 +99,10 @@ input {
     color: var(--white);
     border: none;
     padding: 19px;
-    margin: 2rem 0 0 -1.5rem;
+    position: relative;
+    /* margin: 2rem 0 0 -1.5rem; */
+    top: 5.5rem;
+    right: 2rem;
     width: 380px;
 }
 
@@ -107,26 +118,35 @@ input::placeholder {
     border-radius: 50px;
     color: var(--rich-black-fogra);
     cursor: pointer;
+    font-size: 14px;
     font-family: var(--chivo-light);
     font-weight: 400;
     padding: 16px;
-    margin-right: 12.7rem;
-    margin-left: -8.6rem;
+    position: relative;
+    top: 5.5rem;
+    left: -11rem;
 }
 
 .btn-request:hover {
-    background-color:#81e4be;
+    background-color: #81e4be;
 }
 
 
 .host {
-    margin: -1rem 0 0 30rem;
+    position: absolute;
+    z-index: -2;
+    top: 5rem;
+    left: 24rem;
+    width: 888px;
+    height: 640px;
+    /* margin: -2.5rem 0 0 24rem; */
 }
 
 
 /* pod logos section */
 .pod-images {
-    margin: 5rem 0 0 0.5rem;
+    position: relative;
+    top: 9rem;
 }
 
 .pod-images img {
@@ -134,37 +154,49 @@ input::placeholder {
 }
 
 .pattern_dots {
-    display: none;
-    margin: -2rem 0rem 0 64.8rem;
+    position: relative;
+    top: 34rem;
+    left: 65rem;
 }
 
 /***************** Tablet ***********************/
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
+    html {
+        overflow-x: hidden;
+    }
+
     .host {
-        margin: -7.5rem 0 0 23rem;
-        width: 60%;
+        position: relative;
+        top: -130px;
+        width: 70%;
+        height: 767px;
     }
 
     .public_box {
         position: absolute;
-        width: 760px;
-        height: 520px;
-        margin-top: 10rem;
+        width: 635px;
+        height: 509px;
+        margin-top: 4rem;
         margin-left: 2rem;
     }
 
-   .pattern_dots {
-    position: static;
-    margin: 3rem 12rem 0 2.8rem;
+    .public_box p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .pattern_dots {
+        position: relative;
+        margin: -23rem 0 0 2.8rem;
     }
 }
 
 /****************** Mobile ***********************/
-@media (max-width: 767px) {
-    html{
-    overflow-x: hidden:
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
     }
-    
+
     .pod_logo {
         height: 60%;
         width: 30%;
@@ -173,7 +205,6 @@ input::placeholder {
     }
 
     body {
-        background-image: url("../assets/mobile/image-host.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -187,57 +218,64 @@ input::placeholder {
     .public_box {
         background-color: rgb(22, 28, 32);
         border: none;
-        opacity: 0.9;
+        opacity: 0.5;
         width: 500px;
         height: 697px;
-        margin: 9rem 2rem -19rem 0;
+        position: relative;
+        top: -12rem;
+        right: 3rem;
     }
 
     .btn-request {
-        background-color: var(--medium-aquamarine);
-        margin: 2rem 0 0 -3rem;
-        width: 326px;
-        height: 46px;
-    }
-
-    h1 {
-        margin: 9rem 0 0 0
+    background-color: var(--medium-aquamarine);
+        margin: 2rem 0 0 1rem;
+        font-size: 14px;
+        width: 87%;
+        font-weight: 400;
+        position: relative;
+        top: 15rem;
+        left: 2rem;
     }
 
     .public_box h1 {
-        text-align: center;
-        font-size: 27px;
-        line-height: 38px;
-    }
-    
-    .publi_box p {
-        margin: 0 4rem 0 -5rem;
+        position: relative;
+        top: 9rem;
+        font-family: 'Chivo';
         font-style: normal;
         font-weight: 400;
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .public_box p {
+        position: relative;
+        left: 1.5rem;
+        top: 9.5rem;
         font-size: 15px;
+        font-weight: 400;
         line-height: 25px;
         text-align: center;
     }
 
-     .pattern_dots {
+    .pattern_dots {
         display: none;
     }
 
     input {
-        margin-top: 6rem;
-        margin-left: -3rem;
-        width: 327px;
-        height: 46px;
-    } 
-
-    .pod-images {
-        margin-top: -10.5rem;
-        margin-left: 4rem;
-        width: 315px;
-        height: 17px;
+        top: 16rem;
+        left: 3rem;
+        position: relative;
     }
 
-    .pod-images img{
+    .pod-images {
+        position: relative;
+        top: 0.5rem;
+        left: -1rem;
+    }
+
+    .pod-images img {
         margin-left: 3rem;
         margin-right: -2.4rem;
     }
