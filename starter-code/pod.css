@@ -30,7 +30,7 @@ body {
     height: 56px;
 }
 
-h1 {
+.public_box h1 {
     color: var(--medium-aquamarine);
     font-family: 'Chivo';
     text-transform: uppercase;
@@ -41,7 +41,7 @@ h1 {
     font-weight: 400;
     line-height: 62px;
     width: 665px;
-        height: 124px;
+    height: 124px;
 }
 
 .public_box p {
@@ -63,10 +63,12 @@ span {
 }
 
 
-.error {
+form {
     font-family: var(--chivo-light);
     margin-left: 4rem;
     margin-top: 1rem;
+    width: 427px;
+    height: 56px;
 }
 
 .error-message {
@@ -107,7 +109,6 @@ input {
     border: none;
     padding: 19px;
     position: relative;
-    /* margin: 2rem 0 0 -1.5rem; */
     top: 5.5rem;
     right: 2rem;
     width: 380px;
@@ -115,8 +116,11 @@ input {
 
 input::placeholder {
     color: var(--placeholder);
+    font-size: 14px;
     font-weight: 400;
     font-family: var(--chivo-light);
+    mix-blend-mode: normal;
+    opacity: 0.5;
 }
 
 .btn-request {
@@ -128,10 +132,9 @@ input::placeholder {
     font-size: 14px;
     font-family: var(--chivo-light);
     font-weight: 400;
-    /* padding: 16px; */
     position: relative;
-    top: 5.5rem;
-    left: -12.6rem;
+    top: 2.4rem;
+    left: 11.4rem;
     width: 162px;
     height: 46px;
 }
@@ -143,12 +146,11 @@ input::placeholder {
 
 .host {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     top: 5rem;
     left: 24rem;
     width: 888px;
     height: 640px;
-    /* margin: -2.5rem 0 0 24rem; */
 }
 
 
@@ -207,7 +209,6 @@ input::placeholder {
         position: relative;
         top: 0;
         left: 0;
-        /* margin: -23rem 0 0 2.8rem; */
     }
 }
 
@@ -226,9 +227,13 @@ input::placeholder {
         top: 12px;
     }
 
+    
     body {
-        background-size: cover;
+        background: var(--rich-black-fogra);
+        background-size: contain;
         background-repeat: no-repeat;
+        /* background-image: url(assets/mobile/image-host.jpg);
+        z-index: -3; */
     }
 
     main {
@@ -255,8 +260,8 @@ input::placeholder {
         height: 46px;
         font-weight: 400;
         position: relative;
-        top: 15rem;
-        left: 2rem;
+        top: 16rem;
+        left: -2rem;
     }
 
     .public_box h1 {
@@ -300,7 +305,7 @@ input::placeholder {
 
     .pod-images {
         position: relative;
-        top: 0.5rem;
+        top: 3rem;
         left: -1rem;
     }
 
@@ -309,13 +314,15 @@ input::placeholder {
         margin-right: -2.4rem;
     }
 
-    .host {
-        display: none;
-    }
-
     form{
         width: 327px;
-            height: 108px;
+        height: 108px;
+    }
+
+    input{
+        position: relative;
+        top: 15rem;
+        left: -2rem;
     }
 
     .error-message {
