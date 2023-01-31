@@ -309,10 +309,10 @@ input::placeholder {
         left: -1rem;
     }
 
-    .pod-images img {
+/*     .pod-images img {
         margin-left: 3rem;
         margin-right: -2.4rem;
-    }
+    } */
 
     form{
         width: 327px;
