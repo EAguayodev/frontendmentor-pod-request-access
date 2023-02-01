@@ -113,6 +113,8 @@ input {
     top: 5.5rem;
     right: 2rem;
     width: 380px;
+    outline: none;
+
 }
 
 input::placeholder {
