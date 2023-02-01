@@ -18,7 +18,7 @@
 }
 
 body {
-    position: relative;
+    /* position: relative; */
     background-color: var(--rich-black-fogra);
 }
 
@@ -30,31 +30,6 @@ body {
     height: 56px;
 }
 
-.public_box h1 {
-    color: var(--medium-aquamarine);
-    font-family: 'Chivo';
-    text-transform: uppercase;
-    position: relative;
-    top: 3rem;
-    left: 2rem;
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 62px;
-    width: 665px;
-    height: 124px;
-}
-
-.public_box p {
-    font-family: 'Chivo';
-    color: #C2CBE5;
-    position: relative;
-    top: 5rem;
-    left: 2.2rem;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 28px;
-}
 
 span {
     color: var(--white);
@@ -100,6 +75,33 @@ form {
     width: 723px;
     height: 509px;
     top: 13.2rem;
+}
+
+.public_box h1 {
+    color: var(--medium-aquamarine);
+    font-family: 'Chivo';
+    text-transform: uppercase;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    width: 665px;
+    height: 124px;
+}
+
+.public_box p {
+    font-family: 'Chivo';
+    color: #C2CBE5;
+    position: relative;
+    top: 5rem;
+    left: -22.8rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 -8rem 0 25rem;
 }
 
 input {
@@ -149,8 +151,6 @@ input::placeholder {
     z-index: -1;
     top: 5rem;
     left: 24rem;
-    width: 888px;
-    height: 640px;
 }
 
 
@@ -174,14 +174,17 @@ input::placeholder {
 @media (max-width: 1023px) {
     html {
         overflow-x: hidden;
+        position: relative;
+        width: 375px;
+        height: 667px;
     }
 
-    .host {
+    /* .host {
         position: relative;
         top: -130px;
-        width: 70%;
+        width: 491px;
         height: 767px;
-    }
+    } */
 
     .public_box {
         position: absolute;
@@ -191,7 +194,7 @@ input::placeholder {
         margin-left: 2rem;
     }
 
-    .public_box h1{
+    .public_box h1 {
         position: relative;
         font-size: 48px;
         line-height: 56px;
@@ -201,39 +204,46 @@ input::placeholder {
     }
 
     .public_box p {
+        position: relative;
+        top: 5rem;
+        left: -22.8rem;
+        font-style: normal;
+        font-weight: 300;
         font-size: 18px;
         font-weight: 400;
+        margin: 0 -8rem 0 25rem;
+        width: 445px;
+        height: 84px;
     }
 
     .pattern_dots {
         position: relative;
-        top: 0;
+        top: 49rem;
         left: 0;
     }
 }
 
 /****************** Mobile ***********************/
 @media (max-width: 768px) {
-    html {
+    /* html {
         overflow-x: hidden;
-    }
+    } */
 
     .pod_logo {
-        position:relative;
+        position: relative;
         width: 134.85px;
         height: 56px;
         z-index: 2;
-        left: 7rem;
-        top: 12px;
+        left: 120px;
+        top: 70px;
     }
 
-    
+
     body {
-        background: var(--rich-black-fogra);
-        background-size: contain;
-        background-repeat: no-repeat;
-        /* background-image: url(assets/mobile/image-host.jpg);
-        z-index: -3; */
+        width: 375px;
+        height: 667px;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     main {
@@ -249,24 +259,13 @@ input::placeholder {
         width: 500px;
         height: 697px;
         position: relative;
-        top: -12rem;
+        top: -7rem;
         right: 3rem;
-    }
-
-    .btn-request {
-        background-color: var(--medium-aquamarine);
-        font-size: 14px;
-       width: 326px;
-        height: 46px;
-        font-weight: 400;
-        position: relative;
-        top: 16rem;
-        left: -2rem;
     }
 
     .public_box h1 {
         position: relative;
-        top: 9rem;
+        top: 11.5rem;
         font-family: 'Chivo';
         font-style: normal;
         font-weight: 400;
@@ -275,14 +274,14 @@ input::placeholder {
         text-align: center;
         text-transform: uppercase;
         width: 327px;
-            height: 76px;
+        height: 76px;
     }
 
     .public_box p {
         position: relative;
         left: 1.5rem;
-        margin-right: -23px;
-        top: 9.5rem;
+        margin: 0 -23rem 0 1rem;
+        top: 12.5rem;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
@@ -296,33 +295,53 @@ input::placeholder {
     }
 
     input {
-        top: 16rem;
-        left: 3rem;
+        top: 18rem;
+        left: -1rem;
         position: relative;
         width: 327px;
         height: 46px;
     }
 
-    .pod-images {
+    .btn-request {
+        background-color: var(--medium-aquamarine);
+        font-size: 14px;
+        width: 326px;
+        height: 46px;
+        font-weight: 400;
         position: relative;
-        top: 3rem;
+        top: 19rem;
         left: -1rem;
     }
 
-     .pod-images img {
-        margin-left: 3.5rem;
-        margin-right: -1.4rem;
-    } 
-
-    form{
-        width: 327px;
-        height: 108px;
+    .pod-images {
+        position: relative;
+        top: 12rem;
+        left: -1rem;
     }
 
-    input{
+    .pod-images img {
         position: relative;
-        top: 15rem;
-        left: -2rem;
+        bottom: 4rem;
+        width: 77px;
+        height: 22px;
+        margin-left: 3rem;
+        margin-right: -2.4rem;
+    }
+
+    .host {
+        background-color: var(--rich-black-fogra);
+        position: relative;
+        top: -5rem;
+        left: -33rem;
+        z-index: -1;
+        width: 400px;
+        height: 667px;
+        opacity: 0.10;
+    }
+
+    form {
+        width: 327px;
+        height: 108px;
     }
 
     .error-message {
