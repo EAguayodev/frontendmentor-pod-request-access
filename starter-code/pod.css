@@ -309,7 +309,7 @@ input::placeholder {
         height: 46px;
         font-weight: 400;
         position: relative;
-        top: 19rem;
+        top: 20rem;
         left: -1rem;
     }
 
@@ -345,6 +345,8 @@ input::placeholder {
     }
 
     .error-message {
-        margin: -4.5rem 0 0 3rem;
+        position: relative;
+        top: 15rem;
+        left: 0.5rem;
     }
 }
