@@ -52,6 +52,11 @@ form {
     right: 1rem;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+}
+
 .pod-container {
     display: flex;
     justify-content: space-between;
@@ -175,13 +180,6 @@ input::placeholder {
 
 /***************** Tablet ***********************/
 @media (max-width: 1023px) {
-    html {
-        overflow-x: hidden;
-        position: relative;
-        width: 375px;
-        height: 667px;
-    }
-
     .host {
         position: relative;
         top: -130px;
@@ -233,11 +231,7 @@ input::placeholder {
 
 /****************** Mobile ***********************/
 @media (max-width: 768px) {
-    /* html {
-        overflow-x: hidden;
-    } */
-
-    .pod_logo {
+  .pod_logo {
         position: relative;
         width: 134.85px;
         height: 56px;
