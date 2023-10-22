@@ -54,7 +54,7 @@ form {
 
 .pod-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -78,6 +78,7 @@ form {
 .public_box h1 {
     color: var(--medium-aquamarine);
     font-family: 'Chivo';
+    font-style: normal;
     text-transform: uppercase;
     position: relative;
     top: 3rem;
@@ -99,7 +100,7 @@ form {
     font-style: normal;
     font-weight: 300;
     line-height: 28px;
-    margin: 0 -8rem 0 25rem;
+    width: 445px;
 }
 
 input {
