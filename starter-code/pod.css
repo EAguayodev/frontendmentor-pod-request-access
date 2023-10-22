@@ -52,11 +52,6 @@ form {
     right: 1rem;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
 .pod-container {
     display: flex;
     justify-content: space-between;
