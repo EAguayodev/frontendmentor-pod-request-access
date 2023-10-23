@@ -45,8 +45,6 @@ form {
     margin-top: 1rem;
     width: 427px;
     height: 56px;
-    display: flex;
-    flex-direction: column;
 }
 
 .error-message {
