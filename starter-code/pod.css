@@ -75,9 +75,9 @@ form {
     width: 723px;
     height: 509px;
     top: 13.2rem;
-    display: flex;
+/*     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 /*     text-align: center; */
 }
 
@@ -177,7 +177,7 @@ input::placeholder {
 
 .pattern_dots {
     position: relative;
-/*     top: 38rem; */
+    top: 38rem; 
     left: 65rem;
     margin-top: 20px;
 }
