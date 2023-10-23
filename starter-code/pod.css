@@ -20,6 +20,7 @@
 body {
     /* position: relative; */
     background-color: var(--rich-black-fogra);
+    margin: 0;
 }
 
 .pod_logo {
@@ -44,6 +45,9 @@ form {
     margin-top: 1rem;
     width: 427px;
     height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .error-message {
@@ -53,16 +57,17 @@ form {
 }
 
 .pod-container {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .pod-row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 /* pod box styling starts */
@@ -73,6 +78,10 @@ form {
     width: 723px;
     height: 509px;
     top: 13.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .public_box h1 {
@@ -161,6 +170,8 @@ input::placeholder {
 .pod-images {
     position: relative;
     top: 9rem;
+    display: flex;
+    justify-content: center;
 }
 
 .pod-images img {
@@ -169,8 +180,9 @@ input::placeholder {
 
 .pattern_dots {
     position: relative;
-    top: 38rem;
+/*     top: 38rem; */
     left: 65rem;
+    margin-top: 20px;
 }
 
 /***************** Tablet ***********************/
