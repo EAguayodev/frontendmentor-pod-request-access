@@ -169,6 +169,7 @@ input::placeholder {
     top: 9rem;
     display: flex;
     justify-content: center;
+    right: 5rem;
 }
 
 .pod-images img {
