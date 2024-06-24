@@ -12,6 +12,10 @@ function checkEmail() {
         document.getElementById('error-message').innerHTML = "Oops! Please check your email";
         document.getElementById('error-message').style.display = 'block';
         
+<<<<<<< HEAD
+=======
+        // e.preventDefault();
+>>>>>>> 8e5f5a16173b1bb95f3becd7fac0ef911906b4bc
     } else {
         document.getElementById("error-message").innerHTML = "";
         document.getElementById("error-message").style.display = "none";
